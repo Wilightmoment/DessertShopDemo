@@ -1,0 +1,63 @@
+@media (min-width: 768px)
+    .md-vertical-rl
+        writing-mode: vertical-rl
+    
+a:hover
+    text-decoration: none
+
+.bg-cover
+    background-position: center center
+    background-size: cover
+.vertical
+    writing-mode: vertical-rl
+.text-bold
+    font-weight: bold
+.progress-steps
+    display: flex
+    position: relative
+    justify-content: space-between
+    &:after
+        content: ''
+        position: absolute
+        height: 1px
+        top: 50%
+        left: 0
+        right: 0
+        background-color: #8DA291
+    .step-circle
+        height: 20px
+        width: 20px
+        border: 1px solid #8da291
+        position: relative
+        border-radius: 50%
+        position: relative
+        background-color: #3F5D45
+        z-index: 1
+        display: flex
+        justify-content: center
+        align-items: center
+        &.active:after
+            position: absolute
+            content: ''
+            height: 14px
+            width: 14px
+            border-radius: 50%
+            background-color: #eaf0ed
+        &.completed
+            background-color: white
+        &.completed:after
+            content: ''
+            position: absolute
+            width: 6px
+            height: 11px
+            border-right: 2px solid #3F5D45
+            border-bottom: 2px solid #3F5D45
+            transform: rotate(45deg) translate(-10%, -15%)
+.progress-steps.success
+    &:after, .step-circle
+        background-color: #3F5D45
+    .step-circle
+        border: 1px solid #3F5D45
+        &.completed:after
+            border-right: 2px solid #fff
+            border-bottom: 2px solid #fff

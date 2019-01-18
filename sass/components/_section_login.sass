@@ -1,0 +1,20 @@
+.member
+    cursor: pointer
+.member-me
+    position: relative
+    margin-right: 6px
+    &:before
+        position: absolute
+        content: ''
+        width: 16px
+        height: 16px
+        background-color: white
+    &:checked:after
+        position: absolute
+        left: 4px
+        content: ''
+        width: 8px      
+        height: 14px    
+        border-bottom: 4px solid #3F5D45
+        border-right: 4px solid #3F5D45
+        transform: rotate(45deg)

@@ -1,0 +1,36 @@
+.card
+    position: relative
+    font-size: 20px
+    .card-header
+        height: 315px
+        .card-badge
+            position: absolute
+            top: 0
+            left: 20px
+            letter-spacing: 5px
+            padding: 5px
+            font-size: 16px
+        .card-love
+            position: absolute
+            top: 19px
+            right: 22px
+            line-height: 0
+    .card-body
+        padding:
+            top: 14px
+            bottom: 14px
+    .card-price, .card-footer
+        font-weight: bolder
+    .card-footer
+        padding:
+            top: 16px
+            bottom: 16px
+    .card-love
+        cursor: pointer
+    .card-love-checkbox, .card-love-hidden
+        display: none
+    .card-love-checkbox:checked
+        & ~.card-love-hidden
+            display: block
+        & ~.card-love-show
+            display: none
