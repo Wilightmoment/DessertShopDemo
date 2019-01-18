@@ -2,4 +2,4 @@
 甜點購物網站
 
 # 最佳解析為 1024*
-# RWD bs4 sass
+# RWD BS4 Sass
